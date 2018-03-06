@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/ouadie-lahdioui/AWS_LAB#readme",
   "dependencies": {
-    "aws-sdk": "^2.164.0"
+    "amazon-cognito-identity-js": "^1.2.0",
+    "aws-sdk": "^2.5.5",
+    "jsbn": "^0.1.0",
+    "sjcl": "^1.0.3"
   }
 }
