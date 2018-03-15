@@ -1,4 +1,3 @@
-var AWS = require('aws-sdk');
 var AmazonCognitoIdentity = require('amazon-cognito-identity-js');
 
 var CognitoUser = AmazonCognitoIdentity.CognitoUser;
