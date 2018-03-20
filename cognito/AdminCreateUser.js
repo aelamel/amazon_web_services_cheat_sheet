@@ -1,18 +1,14 @@
-var AWSCognito = require('aws-sdk'); // Rename to AWS
-AWSCognito.config.region = 'eu-central-1';
+// https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityServiceProvider.html#adminCreateUser-property
+var AWS = require('aws-sdk');
 
-var cognitoidentityserviceprovider = new AWSCognito.CognitoIdentityServiceProvider();
-var userPoolId = "eu-central-1_hUodmln6U";
+AWS.config.region = 'eu-central-1';
 
-var poolData = {
-    UserPoolId: userPoolId,
-    ClientId: '6d9vavurt34locsilq4tsbklh5'
-};
+var cognitoidentityserviceprovider = new AWS.CognitoIdentityServiceProvider();
+var userPoolId = "eu-central-1_nGcnRlcf5";
 
 var params = {
     UserPoolId: userPoolId,
     Username: 'ironman@ifsalpha.com',
-    ForceAliasCreation: false,
     MessageAction: "SUPPRESS",
     TemporaryPassword: 'azerty1234',
     UserAttributes: [
@@ -24,5 +20,5 @@ var params = {
 };
 cognitoidentityserviceprovider.adminCreateUser(params, function (err, data) {
     if (err) console.log(err, err.stack);
-    else console.log(data);
+    else console.log(data.User);
 });
