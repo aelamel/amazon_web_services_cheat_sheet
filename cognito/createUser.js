@@ -4,8 +4,8 @@ var AmazonCognitoIdentity = require('amazon-cognito-identity-js');
 var CognitoUserPool = AmazonCognitoIdentity.CognitoUserPool;
 var CognitoUserAttribute = AmazonCognitoIdentity.CognitoUserAttribute;
 
-var userName = 'polonia@ifsalpha.com';
-var email = 'polonia@ifsalpha.com';
+var userName = 'ironman';
+var email = 'ironman@ifsalpha.com';
 var password = 'azerty123';
 
 var poolData = {

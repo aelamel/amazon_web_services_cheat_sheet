@@ -5,7 +5,7 @@ var CognitoUserPool = AmazonCognitoIdentity.CognitoUserPool;
 var AuthenticationDetails = AmazonCognitoIdentity.AuthenticationDetails;
 var CognitoUserAttribute = AmazonCognitoIdentity.CognitoUserAttribute;
 
-var userName = 'ironmen';
+var userName = 'senior@ifsalpha.com';
 var password = 'azerty123';
 
 var poolData = {
